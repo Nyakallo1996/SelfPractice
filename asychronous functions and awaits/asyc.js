@@ -65,7 +65,7 @@ async function count(x) {
   console.log(counting);
 }*/
 
-let counter = " ";
+/*let counter = " ";
 
 function letsWork(work) {
   return new Promise((resolve, reject) => {
@@ -79,4 +79,26 @@ function letsWork(work) {
 
 async function results(x) {
   
+}*/
+
+setTimeout(() => {
+  console.log("first timeout completed");
+}, 2000);
+
+//Using callbacks
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = {name: "John", age: "30"};
+    callback(data);
+  }, 3000);
 }
+
+fetchData(function(data) {
+  console.log(data);
+});
+
+console.log("Data is being fetched...");
+
+
+//Promises
+
