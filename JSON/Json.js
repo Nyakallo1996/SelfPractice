@@ -21,3 +21,6 @@ let meetup = {
     participance: [{name: "Nyakallo"},
 {name: "James"}]
 }
+
+//Excluding and transforming: replacer
+

@@ -81,7 +81,7 @@ async function results(x) {
   
 }*/
 
-setTimeout(() => {
+/*setTimeout(() => {
   console.log("first timeout completed");
 }, 2000);
 
@@ -97,8 +97,15 @@ fetchData(function(data) {
   console.log(data);
 });
 
-console.log("Data is being fetched...");
+console.log("Data is being fetched...");*/
 
 
 //Promises
 
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello from the promise!");
+  }, 2000);
+})
+
+console.log(myPromise);
