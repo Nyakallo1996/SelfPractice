@@ -1,9 +1,9 @@
 //If statement
 
-/*let year = prompt("In which year was js ecma developed?");
-if (year == 2015) alert("your are right");*/
+let year = prompt("In which year was js ecma developed?");
+if (year == 2015) alert("your are right");
 
-/*let accessAllowed;
+let accessAllowed;
 let age = prompt("How old are you?", "");
 if(age > 18) {
     accessAllowed = true;
@@ -11,16 +11,16 @@ if(age > 18) {
     accessAllowed = false;
 }
 
-alert(accessAllowed);*/
+alert(accessAllowed);
 
 //Boolean conversion
 
 //let result = condition ? value1 : value2;
 
-/*let age = prompt("how old are you?")
+let age = prompt("how old are you?")
 let accessAllowed = (age > 18) ? true : false
 
-alert(accessAllowed);*/
+alert(accessAllowed);
 
 //Multiple ?
 
