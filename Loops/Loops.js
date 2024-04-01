@@ -1,6 +1,6 @@
 //the while loop
 
-while (condition) {
+/*while (condition) {
     //code
     //so-called "loop body"
 }
@@ -24,4 +24,5 @@ for(begin, condition, step) {
 
 for (let i = 0; i < 3; i++) {
     console.log(i);
-}
+}*/
+
