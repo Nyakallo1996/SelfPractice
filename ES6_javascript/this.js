@@ -1,11 +1,15 @@
-// this -> object that is excuting a current function
+let baseSalary = 30_000;
+let overtime = 10;
+let rate = 20;
 
-
-const video = {
-    title: "a",
-    play() {
-        console.log(this);
+let employee = {
+    baseSalary: 30_000,
+    overtime: 10,
+    rate: 20,
+    
+    getWage: function() {
+        return this.baseSalary + (this.overtime * this.rate);
     }
 };
 
-video.play();
+employee.getWage();
