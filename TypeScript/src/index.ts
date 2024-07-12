@@ -9,3 +9,8 @@ enum Size {Small, Medium, Large};
 let mySize: Size = Size.Medium;
 
 console.log(mySize);
+
+//functions
+function calculateTax(income: number) : number {
+    return 0;
+}
