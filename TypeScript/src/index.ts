@@ -1,4 +1,11 @@
-let age: number = 20;
+let sales: number = 123_456_78;
 
-if (age < 50)
-    age += 10;
+//Arrays 
+let numbers: number[] = [1, 2, 3];
+
+//Enums
+enum Size {Small, Medium, Large};
+
+let mySize: Size = Size.Medium;
+
+console.log(mySize);
