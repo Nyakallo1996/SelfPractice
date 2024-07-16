@@ -38,12 +38,51 @@ const User: UserInterface = {
 //    console.log(User.age);
 //}
 
-User.greet("Hello");*/
-const printID = (id) => {
+User.greet("Hello");
+
+//Unions and intersactions
+
+//Using Unions
+type IDFielsType = String | number;
+
+const printID = (id: IDFielsType ) => {
     console.log("ID: " + id);
-};
+}
+
 printID(1234562);
-const signContract = (employee) => {
+
+//intersactions
+interface BusinessPartner {
+    name: string;
+    creditScore: number;
+}
+
+interface UserIdentity {
+    id: number;
+    email: string;
+}
+
+type Employee = BusinessPartner & UserIdentity;
+
+const signContract = (employee: Employee): void => {
     console.log("contract signed by " + employee.name + "with email " + employee.email);
+}
+
+signContract({name: "Nyakallo", creditScore: 800, id: 34, email: "Nyakallo@gmail.com"})*/
+//Enums
+var LoginError;
+(function (LoginError) {
+    LoginError["Unauthorized"] = "unauthorized";
+    LoginError["NoUser"] = "no user";
+    LoginError["WrongCredentials"] = "wrongcredentials";
+    LoginError["internal"] = "internal";
+})(LoginError || (LoginError = {}));
+const printErrorMsg = (error) => {
+    if (error == LoginError.Unauthorized) {
+        console.log("User not authorized");
+    }
+    else if (error == LoginError.NoUser) {
+        console.log("No user was found");
+    }
 };
-signContract({ name: "Nyakallo", creditScore: 800, id: 34, email: "Nyakallo@gmail.com" });
+printErrorMsg(LoginError.Unauthorized);

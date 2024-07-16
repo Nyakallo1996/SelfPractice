@@ -37,7 +37,7 @@ const User: UserInterface = {
 //    console.log(User.age);
 //}
 
-User.greet("Hello");*/
+User.greet("Hello");
 
 //Unions and intersactions
 
@@ -68,3 +68,23 @@ const signContract = (employee: Employee): void => {
 }
 
 signContract({name: "Nyakallo", creditScore: 800, id: 34, email: "Nyakallo@gmail.com"})
+
+//Enums
+enum LoginError {
+    Unauthorized = "unauthorized",
+    NoUser = "no user",
+    WrongCredentials = "wrongcredentials",
+    internal = "internal"
+}
+
+const printErrorMsg = (error: LoginError) => {
+    if (error == LoginError.Unauthorized) {
+        console.log("User not authorized");
+    } else if (error == LoginError.NoUser) {
+        console.log("No user was found");
+    }
+}
+
+printErrorMsg(LoginError.Unauthorized);*/
+
+//Generic types
