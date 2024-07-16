@@ -17,5 +17,11 @@ console.log(concatenateValues(5, 15));*/
 const User = {
     id: 2,
     name: "Nyakallo",
+    age: 24
 };
-console.log(User.age);
+if (!User.age) {
+    console.log("No Age Of the User");
+}
+else {
+    console.log(User.age);
+}
