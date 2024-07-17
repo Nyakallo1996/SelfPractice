@@ -88,3 +88,14 @@ const printErrorMsg = (error: LoginError) => {
 printErrorMsg(LoginError.Unauthorized);*/
 
 //Generic types
+class StorageContainer<T> {
+   private contents: T[]
+
+   constructor() {
+    this.contents = [];
+   }
+
+   addItem() {}
+
+   getItem() {}
+}
