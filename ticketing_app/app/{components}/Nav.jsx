@@ -2,7 +2,14 @@
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+    <nav>
+        <div>
+
+        </div>
+        <div>
+            <p className=""></p>
+        </div>
+    </nav>
   )
 }
 
