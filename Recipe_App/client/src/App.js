@@ -4,6 +4,7 @@ import { Home } from './pages/home';
 import { Auth } from './pages/auth';
 import { Create } from './pages/create';
 import { Save } from './pages/save';
+import { Navbar } from "./components/navbar";
 
 function App() {
   return (
