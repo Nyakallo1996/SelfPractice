@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/auth", userRouter);
 
 mongoose.connect(
-  "mongodb+srv://lekgoabamahlaks:8j8Z6o5PUn4SA6Kx@cluster10.2wesq9t.mongodb.net/cluster10?retryWrites=true&w=majority&appName=Cluster10"
+  "mongodb+srv://mahlakametsakabelo:2ZNZojXEDRcs4Wvs@crimeapp.nfzldo7.mongodb.net/?retryWrites=true&w=majority&appName=Crimeapp"
 );
 
 app.listen(3001, () => console.log("Server started"));
