@@ -6,9 +6,9 @@ const PostsSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  discription: { type: String, required: true },
+  description: { type: String, required: true },
   time: { type: Number, required: true },
-  imageUrl: { type: String, required: true },
+  imageUrl: { type: String, required: false},
   postedBy: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "users",
