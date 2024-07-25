@@ -7,11 +7,16 @@ import {
 } from "@clerk/clerk-react";
 
 export const Auth = () => {
-  return;
+  return (
   <div className="sign-in-container">
     <SignedOut>
-      <SignUpButton />
-      <SignInButton />
+      <SignUpButton mode="modal"/>
+      <SignInButton mode="modal"/>
     </SignedOut>
-  </div>;
+
+    <SignedIn>
+        <UserButton/>
+    </SignedIn>
+  </div>
+  );
 };
